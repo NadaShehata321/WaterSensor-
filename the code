@@ -1,0 +1,14 @@
+int pin1 =A0,value;
+void setup() {
+ pinMode(4,OUTPUT);
+ digitalWrite(4,LOW);
+}
+
+void loop() {
+  value=analogRead(pin1);
+  if(value>0){
+    digitalWrite(4,HIGH);
+  }
+  else { digitalWrite(4,LOW);}
+  delay(100);
+}
